@@ -1,0 +1,24 @@
+
+                               <---Requirements--->
+//To know more info in Kmeans-Cluster:https://www.javatpoint.com/k-means-clustering-algorithm-in-machine-learning
+You are requested to implement the k means algorithm using the open MP function.
+
+1. Number of data points is known (you are flexible to define how many data points you
+would use in your program).
+
+2. The datapoint are in 2 dimension i.e, each point is represented as (x,y)
+
+3. You would use only openMP apis. You shouldn’t use mpi apis.
+
+4. You should read your points from the data file in your c script (points are defined by you).
+5. The program output is as follow
+Cluster 1:
+(x1,y1)
+(x2, y2)
+Where x is the location of point in x dimension and y is the location of point in y
+dimension and cluster is in which cluster this point belongs to.
+6. Number of threads equals the number of clusters you will pass to the program.
+7. You are flexible to choose the number of times the algorithm should be repeated until
+you reach your stopping criteria (you have flexibility to choose maximum number of
+iteration and/or choose the threshold of centroid difference error ).
+8. To calculate the distance use the mean square error equation.

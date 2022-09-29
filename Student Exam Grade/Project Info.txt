@@ -1,0 +1,16 @@
+
+<-------------------------Parallel Processing Using MPI--------------------------------->
+
+You have a list of students' ids with their exam grade at a course written in a file. Some of them
+will pass and some won’t pass. This depends on their grades if the grade was greater than or
+equal 60 they will pass otherwise they will be asked to repeat the exam.
+Master process (rank 0)
+- Read data from file
+- Divide the students list by the number of processes you have then send it to them.
+- Print the summation of the number of passed students received from each process.
+For each process
+- Receive part of students data
+- Check if they passed or not and print message for each student
+<Student ID> Passed The Exam
+<Student ID> Failed. Please Repeat The Exam
+- Calculate number of passed student then send it to master process (rank 0)
